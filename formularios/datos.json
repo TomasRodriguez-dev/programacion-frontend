@@ -1,0 +1,72 @@
+[
+    {
+        "id": 1,
+        "nombre": "Juan",
+        "apellido": "Pérez",
+        "pais": "Argentina",
+        "mensaje": "Hola, soy de Argentina!"
+    },
+    {
+        "id": 2,
+        "nombre": "María",
+        "apellido": "González",
+        "pais": "Chile",
+        "mensaje": "Hola, soy de Chile!"
+    },
+    {
+        "id": 3,
+        "nombre": "Pedro",
+        "apellido": "Rodríguez",
+        "pais": "Uruguay",
+        "mensaje": "Hola, soy de Uruguay!"
+    },
+    {
+        "id": 4,
+        "nombre": "Luisa",
+        "apellido": "Hernández",
+        "pais": "Colombia",
+        "mensaje": "Hola, soy de Colombia!"
+    },
+    {
+        "id": 5,
+        "nombre": "Carlos",
+        "apellido": "Sánchez",
+        "pais": "Perú",
+        "mensaje": "Hola, soy de Perú!"
+    },
+    {
+        "id": 6,
+        "nombre": "Ana",
+        "apellido": "Silva",
+        "pais": "Brasil",
+        "mensaje": "Olá, sou do Brasil!"
+    },
+    {
+        "id": 7,
+        "nombre": "Jorge",
+        "apellido": "López",
+        "pais": "Argentina",
+        "mensaje": "Hola, soy de Argentina!"
+    },
+    {
+        "id": 8,
+        "nombre": "Sofía",
+        "apellido": "Díaz",
+        "pais": "Chile",
+        "mensaje": "Hola, soy de Chile!"
+    },
+    {
+        "id": 9,
+        "nombre": "Miguel",
+        "apellido": "García",
+        "pais": "Uruguay",
+        "mensaje": "Hola, soy de Uruguay!"
+    },
+    {
+        "id": 10,
+        "nombre": "Lucía",
+        "apellido": "Martínez",
+        "pais": "Colombia",
+        "mensaje": "Hola, soy de Colombia!"
+    }
+]

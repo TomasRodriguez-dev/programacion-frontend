@@ -4,9 +4,44 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Formularios</title>
-    <link rel="stylesheet" href="public/css/style.css">
+    <link rel="stylesheet" href="public/css/style-form.css">
 </head>
 <body>
+    <div class="container">
+        <div class="container-izquierdo">
+            <img src="assets/img/programacion.jpg" alt="Programacion">
+        </div>
+        <div class="container-derecho">
+            <div class="container-usuarios">
+                <a href="tabla-usuarios.html">
+                    <img src="assets/img/grupo.png" alt="Usuarios ITS">
+                    <span></span>
+                </a>
+            </div>
+            <div class="container-img">
+                <img src="assets/img/logoITS.png" alt="ITS Cipolletti">
+            </div>
+            <form id="form">
+                <label for="nombre">Nombre</label>
+                <input type="text" id="nombre" placeholder="Ingrese su nombre" required>
+                <label for="apellido">Apellido</label>
+                <input type="text" id="apellido" placeholder="Ingrese su apellido" required>
+                <label for="pais">Pais</label>
+                <select id="pais" required>
+                    <option value="Argentina">Argentina</option>
+                    <option value="Chile">Chile</option>
+                    <option value="Uruguay">Uruguay</option>
+                    <option value="Colombia">Colombia</option>
+                    <option value="Brasil">Brasil</option>
+                    <option value="Perú">Perú</option>
+                </select>
+                <label for="mensaje">Mensaje</label>
+                <textarea id="mensaje" placeholder="Ingrese su mensaje" required></textarea>
+                <button type="submit" id="enviar">Enviar</button>
+                <footer>Tomás Rodriguez Ocampo © 2024</footer>
+            </form>
+        </div>
+    </div>
     <script src="public/js/main.js"></script>
 </body>
 </html>
