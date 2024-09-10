@@ -402,12 +402,12 @@ nav a:hover::before {
     display: none;
 }
 
-.card-cursos, .card-estudiantes, .card-ui {
+.persona, .card-cursos, .card-estudiantes, .card-ui {
     opacity: 0;
     transform: translateY(20px);
 }
 
-.card-cursos.animate, .card-estudiantes.animate, .card-ui.animate {
+.persona.animate, .card-cursos.animate, .card-estudiantes.animate, .card-ui.animate {
     animation: appear 0.5s ease-out;
     animation-fill-mode: forwards;
 }
