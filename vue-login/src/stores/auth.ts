@@ -7,7 +7,6 @@ export const useAuthStore = defineStore('auth', {
     }),
     actions: {
         async login(username: string, password: string) {
-            // Lógica de autenticación aquí
             return new Promise<boolean>((resolve) => {
                 setTimeout(() => {
                     if (username && password) {
