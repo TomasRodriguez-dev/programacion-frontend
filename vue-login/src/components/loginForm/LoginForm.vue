@@ -4,7 +4,7 @@
     import  { useAuthStore } from '../../stores/auth';
     import InputComponent from '@/components/InputComponent.vue';
     import ButtonComponent from '@/components/ButtonComponent.vue';
-    import type { User } from '@/types/user';
+    import type { User } from '@/models/UserModel';
 
     const router = useRouter();
     const authStore = useAuthStore();
