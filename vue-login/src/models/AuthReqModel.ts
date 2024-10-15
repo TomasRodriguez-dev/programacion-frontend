@@ -1,4 +1,4 @@
-export interface AuthReqBody {
-    username: string;
-    password: string;
+export interface AuthRequestBody {
+  username: string
+  password: string
 }

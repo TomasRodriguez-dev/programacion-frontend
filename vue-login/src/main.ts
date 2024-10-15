@@ -3,16 +3,31 @@ import './assets/global.css'
 import { createApp } from 'vue'
 import { createPinia } from 'pinia'
 import { IonicVue } from '@ionic/vue'
+import { useAuthStore } from './stores/authStore'
+import { fakeBackend } from './helpers/fakebackend'
 
 import App from './App.vue'
 import router from './router'
 
-const app = createApp(App)
+fakeBackend()
+startApp()
 
-const pinia = createPinia()
+async function startApp() {
+  const app = createApp(App)
+  const pinia = createPinia()
 
-app.use(pinia)
-app.use(router)
-app.use(IonicVue)
+  app.use(pinia)
+  app.use(router)
+  app.use(IonicVue)
 
-app.mount('#app')
+  try {
+    const authStore = useAuthStore()
+    await authStore.refreshToken()
+  } catch (error) {
+    console.warn('No hay datos de autenticacion para el usuario')
+    console.info('Rederigiendo a login page')
+    router.push('/login')
+  }
+
+  app.mount('#app')
+}

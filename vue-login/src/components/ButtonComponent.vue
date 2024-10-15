@@ -1,5 +1,4 @@
 <script setup lang="ts">
-    import { IonSpinner } from '@ionic/vue';
     // Se define los props del componente
     defineProps({
         text: String,
@@ -7,37 +6,52 @@
             type: String as () => 'button' | 'submit' | 'reset',
             default: 'button'
         },
-        loading: Boolean
+        isSubmitting: Boolean
     });
 </script>
 
 <template>
-    <button :type="type" :disabled="loading" class="btn">
-        <span v-if="!loading">{{ text }}</span>
-        <IonSpinner v-else name="crescent" />
+    <button :type="type" class="btn">
+        <span v-show="isSubmitting" class="loader"></span>
+        <p v-show="!isSubmitting">{{ text }}</p>
     </button>
 </template>
 
 <style scoped>
     .btn {
         width: 100%;
-        height: 45px;
-        background: #fff;
+        height: 50px;
+        border-radius: 15px;
         border: none;
         outline: none;
-        border-radius: 40px;
         box-shadow: 0 0 10px rgba(0, 0, 0, .1);
         cursor: pointer;
-        font-size: 16px;
-        color: #333;
+        font-size: 1.2em;
         font-weight: 600;
-        display: flex;
-        justify-content: center;
-        align-items: center;
+        color: #333;
     }
-
-    .btn:disabled {
-        opacity: 0.7;
-        cursor: not-allowed;
+    .btn p {
+        font-size: 1em;
+        font-weight: 600;
+        color: #333; 
+    }
+    .loader {
+        margin: auto 0;
+        width: 24px;
+        height: 24px;
+        border: 4px solid purple;
+        border-bottom-color: transparent;
+        border-radius: 50%;
+        display: inline-block;
+        box-sizing: border-box;
+        animation: rotation 1s linear infinite;
+    }
+    @keyframes rotation {
+        0% {
+            transform: rotate(0deg);
+        } 
+        100% {
+            transform: rotate(360deg);
+        }
     }
 </style>

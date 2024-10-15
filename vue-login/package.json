@@ -16,8 +16,10 @@
     "@ionic/vue": "^8.3.1",
     "ionicons": "^7.4.0",
     "pinia": "^2.2.2",
+    "vee-validate": "^4.13.2",
     "vue": "^3.4.29",
-    "vue-router": "^4.4.5"
+    "vue-router": "^4.4.5",
+    "yup": "^1.4.0"
   },
   "devDependencies": {
     "@rushstack/eslint-patch": "^1.8.0",
